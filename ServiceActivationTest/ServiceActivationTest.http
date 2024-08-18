@@ -1,0 +1,16 @@
+@ServiceActivationTest_HostAddress = http://localhost:5092
+
+GET {{ServiceActivationTest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+GET {{ServiceActivationTest_HostAddress}}/weatherforecast/
+Accept: application/json
+TenantId: 1
+
+###
+GET {{ServiceActivationTest_HostAddress}}/weatherforecast/
+Accept: application/json
+TenantId: 2
+
+###
